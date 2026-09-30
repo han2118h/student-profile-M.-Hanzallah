@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile Card</title>
+  <style>
+    /* Basic Page Settings */
+    body {
+      background-color: #f0f2f5;
+      font-family: Arial, sans-serif;
+      padding: 50px 20px;
+    }
+
+    .profile-card {
+      position: relative;        
+      width: 400px;              
+      background-color: white; 
+      border: 3px solid #0056b3; 
+      padding: 30px;             
+      margin: 0 auto;           
+      border-radius: 10px;
+    }
+
+ 
+    .student-name {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .student-dept {
+      font-size: 16px;
+      color: #0056b3;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .student-email {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .skills-title {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+  
+    .skill-tag {
+      display: inline-block;     
+      background-color: #e9ecef;
+      color: #333;
+      padding: 5px 10px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+
+  
+    .new-badge {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: red;
+      color: white;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 3px 8px;
+      border-radius: 3px;
+    }
+
+
+    .contact-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: green;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+  
+    @media (max-width: 600px) {
+      .profile-card {
+        width: 100%;           
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="new-badge">NEW</div>
+        
+        <h2 class="student-name">Muhammad Hanzallah</h2>
+        <p class="student-dept">Department of Computer Science</p>
+        <p class="student-email">muhammad.hanzallah@numl.edu</p>
+    
+        <p class="skills-title">Skills:</p>
+        <span class="skill-tag">HTML5</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+      </div>
+      <button class="contact-btn">Contact Me</button>
+
+    </body>
+    </html>
